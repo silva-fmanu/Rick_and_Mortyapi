@@ -80,17 +80,21 @@ p{
     background-image: url(https://i.pinimg.com/564x/d8/3e/23/d83e23e844410b6a7acd48b6c1a0adba.jpg);
  }
 
+
  .characters_information{
-    background-color:#005C53;
+    background-color:#009ea3;
     display: inline-block;
     margin-top: 1%;
-    padding: 10% 32.5%;
+    padding: 10% 32.5% 10% 32.5%;
     position: relative;
     text-align: center;
-    border-radius: 1.9%;
-
-    
+    border-style: solid;
+    border-radius: 1.9%;   
+    border-color: rgb(28, 182, 74);
+    border-width: 0.5rem;
  }
+
+ 
 
  .character_image{
    position: absolute;
@@ -144,7 +148,7 @@ p{
 }
 .character_status{
     position: absolute;
-    left: 44%;
+    left: 45%;
     top: 25%;
 }
 
@@ -204,32 +208,29 @@ p{
 
 .character_location_name{
     position: absolute;
-    left: 46%;
+    left: 47%;
     top: 77%;
 }
 
+.mensagem-erro{
+    position: absolute;
+    font-size: 2rem;
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    color:rgb(0, 0, 0);
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.find{
+    position: absolute;
+    font-size: 2rem;
+    top: 34%;
+    left: 35%;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 125%;
+}
 
 input:focus::-webkit-input-placeholder 
 {
@@ -247,3 +248,784 @@ input:focus::-webkit-input-placeholder
  {  
     color: transparent;  
  }
+
+ @media screen and (max-width:1500px){
+    .character_species{
+        left: 46%;
+    }
+
+    .character_name{
+        font-size: 1.5rem;
+    }
+
+    .character_gender{
+        font-size: 1.2;
+    }
+ }
+
+ 
+ @media screen and (max-width:1150px){
+    .character_species{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    .character_status{
+        left: 47%;
+        font-size: 0.9rem;
+    }
+
+    .character_species{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_gender{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_origin_name{
+        left: 46%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_location_name{
+        left: 49%;
+        font-size: 0.9rem;
+    }
+
+    .character_type{
+        left: 63%;
+        font-size: 0.9rem;
+    }
+
+    .traco{
+        left: 41%;
+    }
+
+    .character_name{
+        top:5%;
+        left: 44%;
+        font-size: 1.4rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 1.15rem;
+    }
+
+    .titulo-type{
+        font-size: 0.95rem;
+    }
+
+    .titulo-location{
+        font-size: 0.95rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.95rem;
+    }
+
+    .titulo-number{
+        font-size: 0.95rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.95rem;
+    }
+
+    .titulo-species{
+        font-size: 0.95rem;
+    }
+
+    .titulo-status{
+        font-size: 0.95rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.95rem;
+    }
+
+ }
+
+ 
+ @media screen and (max-width:1000px){
+    .character_species{
+        left: 49%;
+    }
+
+    .character_status{
+        left: 48%;
+    }
+
+    .character_species{
+        left: 49%;
+    }
+
+    
+    .character_gender{
+        left: 49%;
+    }
+
+    
+    .character_origin_name{
+        left: 47%;
+    }
+
+    
+    .character_location_name{
+        left: 50%;
+    }
+
+    .character_type{
+        left: 64%;
+    }
+
+    .traco{
+        left: 41%;
+        
+    }
+
+    .character_name{
+        top:5%;
+        left: 44%;
+        font-size: 1.5rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 1.3rem;
+    }
+
+ }
+
+ 
+ @media screen and (max-width:990px){
+
+    .mensagem-erro{
+        position: absolute;
+        font-size: 1.5rem;
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        color:rgb(0, 0, 0);
+    
+    }
+    
+    .find{
+        position: absolute;
+        font-size: 1.2rem;
+        top: 34%;
+        left: 35%;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        line-height: 125%;  
+    }
+    .character_species{
+        left: 49%;
+    }
+
+    .character_status{
+        left: 48%;
+    }
+
+    .character_species{
+        left: 49%;
+    }
+
+    
+    .character_gender{
+        left: 49%;
+    }
+
+    
+    .character_origin_name{
+        left: 47%;
+    }
+
+    
+    .character_location_name{
+        left: 50%;
+    }
+
+    .character_type{
+        left: 64%;
+    }
+
+    .traco{
+        left: 41%;
+        
+    }
+
+    .character_name{
+        top:5%;
+        left: 44%;
+        font-size: 1.5rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 1.3rem;
+    }
+
+
+ }
+
+ @media screen and (max-width:890px){
+    .character_species{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    .character_status{
+        left: 47%;
+        font-size: 0.9rem;
+    }
+
+    .character_species{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_gender{
+        left: 48%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_origin_name{
+        left: 46%;
+        font-size: 0.9rem;
+    }
+
+    
+    .character_location_name{
+        left: 49%;
+        font-size: 0.9rem;
+    }
+
+    .character_type{
+        left: 63%;
+        font-size: 0.9rem;
+    }
+
+    .traco{
+        left: 41%;
+    }
+
+    .character_name{
+        top:5%;
+        left: 44%;
+        font-size: 1.4rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 1.15rem;
+    }
+
+    .titulo-type{
+        font-size: 0.95rem;
+    }
+
+    .titulo-location{
+        font-size: 0.95rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.95rem;
+    }
+
+    .titulo-number{
+        font-size: 0.95rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.95rem;
+    }
+
+    .titulo-species{
+        font-size: 0.95rem;
+    }
+
+    .titulo-status{
+        font-size: 0.95rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.95rem;
+    }
+
+ }
+
+ 
+ @media screen and (max-width:1000px){
+    .character_species{
+        left: 49%;
+    }
+
+    .character_status{
+        left: 48%;
+    }
+
+    .character_species{
+        left: 49%;
+    }
+
+    
+    .character_gender{
+        left: 49%;
+    }
+
+    
+    .character_origin_name{
+        left: 47%;
+    }
+
+    
+    .character_location_name{
+        left: 50%;
+    }
+
+    .character_type{
+        left: 64%;
+    }
+
+    .traco{
+        left: 41%;
+        
+    }
+
+    .character_name{
+        top:5%;
+        left: 44%;
+        font-size: 1.5rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 1.3rem;
+    }
+
+ }
+
+ 
+ @media screen and (max-width:890px){
+    
+    .find{
+        position: absolute;
+        font-size: 1rem;
+        top: 34%;
+        left: 35%;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        line-height: 125%;
+    }
+    .character_species{
+        left: 70%;
+        font-size: 0.7rem;
+    }
+
+    .character_status{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    .character_species{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_gender{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_origin_name{
+        left: 48%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_location_name{
+        left: 52%;
+        font-size: 0.7rem;
+    }
+
+    .character_type{
+        left: 68%;
+        font-size: 0.7rem;
+    }
+
+    .traco{
+        left: 41%;
+        font-size: 0.85rem;
+    }
+
+    .character_name{
+        top:5%;
+        left: 43%;
+        font-size: 0.85rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 0.8rem;
+    }
+
+    .titulo-type{
+        left: 60%;
+        font-size: 0.72rem;
+    }
+
+    .titulo-location{
+        font-size: 0.72rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.72rem;
+    }
+
+    .titulo-number{
+        font-size: 0.72rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.72rem;
+    }
+
+    .titulo-species{
+        font-size: 0.72rem;
+    }
+
+    .titulo-status{
+        font-size: 0.72rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.72rem;
+    }
+ }
+
+ @media screen and (max-width:550px){
+  
+    .character_species{
+        left: 70%;
+        font-size: 0.6rem;
+    }
+
+    .character_status{
+        left: 50%;
+        font-size: 0.6rem;
+    }
+
+    .character_species{
+        left: 50%;
+        font-size: 0.6rem;
+    }
+
+    
+    .character_gender{
+        left: 50%;
+        font-size: 0.6rem;
+    }
+
+    
+    .character_origin_name{
+        left: 48%;
+        font-size: 0.6rem;
+    }
+
+    
+    .character_location_name{
+        left: 52%;
+        font-size: 0.6rem;
+    }
+
+    .character_type{
+        left: 68%;
+        font-size: 0.6rem;
+    }
+
+    .traco{
+        left: 41%;
+        font-size: 0.75rem;
+    }
+
+    .character_name{
+        top:5%;
+        left: 43%;
+        font-size: 0.75rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 0.7rem;
+    }
+
+    .titulo-type{
+        left: 60%;
+        font-size: 0.62rem;
+    }
+
+    .titulo-location{
+        font-size: 0.62rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.62rem;
+    }
+
+    .titulo-number{
+        font-size: 0.62rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.62rem;
+    }
+
+    .titulo-species{
+        font-size: 0.62rem;
+    }
+
+    .titulo-status{
+        font-size: 0.62rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.62rem;
+    }
+ }
+
+ 
+ @media screen and (max-width:580px){
+    .mensagem-erro{
+        position: absolute;
+        font-size: 1rem;
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        color:rgb(0, 0, 0);
+    
+    }
+    
+    .find{
+        position: absolute;
+        font-size: 0.8rem;
+        top: 32%;
+        left: 35%;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        line-height: 125%;
+    }
+
+    .character_species{
+        left: 70%;
+        font-size: 0.7rem;
+    }
+
+    .character_status{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    .character_species{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_gender{
+        left: 50%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_origin_name{
+        left: 48%;
+        font-size: 0.7rem;
+    }
+
+    
+    .character_location_name{
+        left: 52%;
+        font-size: 0.7rem;
+    }
+
+    .character_type{
+        left: 68%;
+        font-size: 0.7rem;
+    }
+
+    .traco{
+        left: 41%;
+        font-size: 0.85rem;
+    }
+
+    .character_name{
+        top:5%;
+        left: 43%;
+        font-size: 0.85rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 0.8rem;
+    }
+
+    .titulo-type{
+        left: 60%;
+        font-size: 0.72rem;
+    }
+
+    .titulo-location{
+        font-size: 0.72rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.72rem;
+    }
+
+    .titulo-number{
+        font-size: 0.72rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.72rem;
+    }
+
+    .titulo-species{
+        font-size: 0.72rem;
+    }
+
+    .titulo-status{
+        font-size: 0.72rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.72rem;
+    }
+ }
+
+ @media screen and (max-width:590px){
+    .characters_information{
+        padding: 10% 35% 10% 35%;
+        padding-right: 35%;
+    }
+  
+    .character_species{
+        left: 70%;
+        font-size: 0.5rem;
+    }
+
+    .character_status{
+        left: 50%;
+        font-size: 0.5rem;
+    }
+
+    .character_species{
+        left: 50%;
+        font-size: 0.5rem;
+    }
+
+    
+    .character_gender{
+        left: 50%;
+        font-size: 0.5rem;
+    }
+
+    
+    .character_origin_name{
+        left: 48%;
+        font-size: 0.5rem;
+    }
+
+    
+    .character_location_name{
+        left: 52%;
+        font-size: 0.5rem;
+    }
+
+    .character_type{
+        left: 68%;
+        font-size: 0.5rem;
+    }
+
+    .traco{
+        left: 41%;
+        font-size: 0.5rem;
+    }
+
+    .character_name{
+        top:5%;
+        left: 43%;
+        font-size: 0.5rem;
+    }
+
+    .character_number{
+        top: 6%;
+        font-size: 0.5rem;
+    }
+
+    .titulo-type{
+        left: 60%;
+        font-size: 0.5rem;
+    }
+
+    .titulo-location{
+        font-size: 0.5rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.5rem;
+    }
+
+    .titulo-number{
+        font-size: 0.5rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.5rem;
+    }
+
+    .titulo-species{
+        font-size: 0.5rem;
+    }
+
+    .titulo-status{
+        font-size: 0.5rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.5rem;
+    }
+
+    .mensagem-erro{
+        position: absolute;
+        font-size: 0.8rem;
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        color:rgb(0, 0, 0);
+    
+    }
+    
+    .find{
+        position: absolute;
+        font-size: 0.8rem;
+        top: 23%;
+        left: 35%;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        line-height: 125%;
+    }
+ }
+
+

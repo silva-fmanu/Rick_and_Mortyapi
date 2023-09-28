@@ -2,12 +2,20 @@ const characterName = document.querySelector('.character_name');
 const characterNumber = document.querySelector('.character_number');
 const characterImage = document.querySelector('.character_image');
 const characterStatus = document.querySelector('.character_status');
+const tituloStatus = document.querySelector('.titulo-status');
 const characterSpecies = document.querySelector('.character_species');
+const tituloSpecies = document.querySelector('.titulo-species');
 const characterGender = document.querySelector('.character_gender');
 const characterType = document.querySelector('.character_type');
 const characterLocationName = document.querySelector('.character_location_name');
 const characterOriginName= document.querySelector('.character_origin_name');
-
+const traco = document.querySelector('.traco');
+const tituloGender = document.querySelector('.titulo-gender');
+const tituloType = document.querySelector('.titulo-type');
+const tituloOrigin = document.querySelector('.titulo-origin');
+const tituloLocation = document.querySelector('.titulo-location');
+const mensagemErro = document.querySelector('.mensagem-erro');
+const Find = document.querySelector('.find');
 
 
 const form = document.querySelector('.form');
@@ -33,32 +41,53 @@ const rendercharacters = async (characters) =>{
   
   if (data){
 
-    characterName.innerHTML = data.name;
     characterNumber.innerHTML = data.id;
+    Find.innerHTML = '';
+    characterName.innerHTML = data.name;
+    traco.innerHTML = '-';
     characterStatus.innerHTML = data.status;
+    tituloStatus.innerHTML = 'Status:';
     characterSpecies.innerHTML = data.species;
+    tituloSpecies.innerHTML = 'Species:';
     characterType.innerHTML = data.type;
+    tituloGender.innerHTML = 'Gender:';
     characterGender.innerHTML = data.gender;
+    tituloType.innerHTML = 'Type:';
     characterImage.src = data.image;
+    characterImage.alt = data.name;
     characterLocationName.innerHTML = data['location']['name'];
+    tituloLocation.innerHTML = 'Location:';
     characterOriginName.innerHTML = data['origin']['name'];
+    tituloOrigin.innerHTML = 'Origin:';
     input.value = '';
+    planofundo = '';
+    mensagemErro.innerHTML = '';
+    
 
 
   }
 
     else{
-      characterNumber.innerHTML = 'Character Not found :( try again';
+      Find.innerHTML = '';
+      mensagemErro.innerHTML = 'Oops! This character doesn´t exist! Search for a number up to 826.';
+      characterNumber.innerHTML = '';
       characterName.innerHTML = '';
-      characterImage.src = '';
+      traco.innerHTML = '';
       characterStatus.innerHTML = '';
+      tituloStatus.innerHTML = '';
       characterSpecies.innerHTML = '';
+      tituloSpecies.innerHTML = '';
       characterType.innerHTML = '';
+      tituloGender.innerHTML = '';
       characterGender.innerHTML = '';
-      characterImage.src = data.image;
+      tituloType.innerHTML = '';
+      characterImage.src = '';
+      characterImage.alt = '';
       characterLocationName.innerHTML = '';
+      tituloLocation.innerHTML = '';
       characterOriginName.innerHTML = '';
-      
+      tituloOrigin.innerHTML = '';
+      input.value = '';
     }
   
  
