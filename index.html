@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RickandMorty</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="icon" href="estilos/imagens/logodotitulocerto.png">
+  <script defer src="estilos/api.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="/index.html"><img src="estilos/imagens/Logo.png" alt="Logo do site, Rick and Morty escrito com letras grandes e tremidas como se fosse um raio, as letras são azuis com um contorno verde neon" width="700rem"></a>
+        </div>
+
+        <div class="nav-list">
+            <div class="barra"> 
+
+              <form class="form">
+                <input type="search" class="input_search" id="characterid" placeholder="Character number" required>
+              </form>
+
+            </div> 
+        </div>
+      </nav>
+
+    </header>
+    <div class="characters_information">
+        <img class="character_image" src="https://rickandmortyapi.com/api/character/avatar/361.jpeg"></img>
+            <p class="titulo-number">Character Number:</p>
+            <p class="character_number">2</p>
+            <p class="titulo-nome">Name:</p>
+            <p class="character_name">name</p> <!- olhar o vídeo do pokemon para ver como faz ->
+          
+        <p class="titulo-status">Status:</p>
+        <p class="character_status">status</p>
+      
+        
+          <p class="titulo-type">Type:</p>
+          <p class="character_type">type</p>
+   
+       
+          <p class="titulo-gender">Gender:</p>
+          <p class="character_gender">gender</p>
+        
+        
+          <p class="titulo-species">Specie:</p>
+          <p class="character_species">specie</p>
+        
+       
+          <p class="titulo-origin">Origin:</p>
+          <p class="character_origin_name">origin</p>
+        
+        
+          <p class="titulo-location">Location:</p>
+          <p class="character_location_name">location name</p>
+      
+        </div>
+        
+
+  </main>
+
+  <div class="container-characters">
+    <img class="character_image_contain"></img>
+      <p class="character_number_contain"></p>
+      <p class="character_name_contain"></p>
+  </div>
+ 
+</body>
+</html>
