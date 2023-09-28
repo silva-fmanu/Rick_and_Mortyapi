@@ -48,7 +48,7 @@ const rendercharacters = async (characters) =>{
   }
 
     else{
-      characterNumber.innerHTML = 'Not found, try again';
+      characterNumber.innerHTML = 'Character Not found :( try again';
       characterName.innerHTML = '';
       characterImage.src = '';
       characterStatus.innerHTML = '';
@@ -58,6 +58,7 @@ const rendercharacters = async (characters) =>{
       characterImage.src = data.image;
       characterLocationName.innerHTML = '';
       characterOriginName.innerHTML = '';
+      
     }
   
  

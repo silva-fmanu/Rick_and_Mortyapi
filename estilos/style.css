@@ -1,28 +1,22 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@400;500&family=Nunito&family=Nunito+Sans:opsz@6..12&family=Rubik:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&family=Rubik:wght@300;400&display=swap');
 
 *{
      margin: 0;
      padding: 0;
-     font-family: 'Nunito Sans', sans-serif;
+     font-family: 'Rubik', sans-serif;
      box-sizing: border-box;
 }
 
-header{
-    background-color:rgb(33, 44, 41);
-    box-shadow: 0px 3px 10px #2e2e2e;
-    
-}
-
 p{
-    font-size: 2.1rem;
+    font-size: 1.1rem;
 }
 
 .nav-bar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 6rem;
+    padding: 2rem 14rem;
     padding-bottom: 3%;
 }
 
@@ -55,20 +49,23 @@ p{
     display: flex;
     align-items:center;
     background-color: rgb(255, 255, 255);
-    height: 2.2rem;
+    border-style: solid;
+    border-width: 0.20rem;
     border-radius: 5px;
-    padding: 1.4rem 4rem;
+    padding: 0.3rem 1.1rem;
+    border-color: rgb(70, 69, 69);
 
  }
  
  .barra input{
+    text-align: center;
     background: transparent;
     border: 0;
     outline: none;
-    flex: 1;
-    font-size:1.6rem;
+    font-size: 1rem;
     display: flex;
  }
+
 
 
  .barra button{
@@ -79,25 +76,29 @@ p{
 
  body{
     text-align: center;
+    background-color: black;
+    background-image: url(https://i.pinimg.com/564x/d8/3e/23/d83e23e844410b6a7acd48b6c1a0adba.jpg);
  }
+
  .characters_information{
-    background-color: rgb(102, 102, 102);
+    background-color:#005C53;
     display: inline-block;
-    margin-top: 1.5%;
-    padding: 5% 25%;
+    margin-top: 1%;
+    padding: 10% 32.5%;
     position: relative;
     text-align: center;
-    border-radius: 10% 10% 10% 10%;
+    border-radius: 1.9%;
 
     
  }
 
  .character_image{
    position: absolute;
-   width: 35%;
+   height: 100%;
    top: 0%;
    left: 0%;
-   border-radius: 10%;
+   border-radius: 2%;
+   box-shadow: 2px 0px 10px 2px black;
 
 }
 
@@ -113,3 +114,136 @@ p{
    font-weight: 600;
    text-align: left;
 }
+
+.character_number{
+    position:absolute;
+    left: 34%;
+    top: 5%;
+    font-size: 1.6rem;
+}
+
+.traco{
+    position: absolute;
+    left: 40%;
+    top:5%;
+    font-size: 1.5rem;
+    
+}
+
+.character_name{
+    position: absolute;
+    left: 42%;
+    top:4.3%;
+    font-size: 1.9rem;
+}
+
+.titulo-status{
+    position: absolute;
+    left: 37%;
+    top: 25%;
+}
+.character_status{
+    position: absolute;
+    left: 44%;
+    top: 25%;
+}
+
+.titulo-type{
+    position: absolute;
+    left: 56%;
+    top: 25%;
+}
+
+.character_type{
+    position: absolute;
+    left: 62%;
+    top: 25%;
+}
+
+.titulo-gender{
+    position: absolute;
+    left: 37%;
+    top: 38%;
+}
+
+.character_gender{
+    position: absolute;
+    left: 45%;
+    top: 38%;
+}
+
+.titulo-species{
+    position: absolute;
+    left: 37%;
+    top: 51%;
+}
+
+.character_species{
+    position: absolute;
+    left: 45%;
+    top: 51%;
+}
+
+.titulo-origin{
+    position: absolute;
+    left: 37%;
+    top: 64%;
+}
+
+.character_origin_name{
+    position: absolute;
+    left: 44%;
+    top: 64%;
+}
+
+.titulo-location{
+    position: absolute;
+    left: 37%;
+    top: 77%;
+}
+
+.character_location_name{
+    position: absolute;
+    left: 46%;
+    top: 77%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+ }
+ input:focus:-moz-placeholder 
+ { 
+    color: transparent;  
+ }
+ input:focus::-moz-placeholder 
+ { 
+    color: transparent;  
+ }
+ input:focus:-ms-input-placeholder 
+ {  
+    color: transparent;  
+ }
