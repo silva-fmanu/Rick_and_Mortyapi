@@ -17,9 +17,13 @@ const tituloLocation = document.querySelector('.titulo-location');
 const mensagemErro = document.querySelector('.mensagem-erro');
 const Find = document.querySelector('.find');
 
-
 const form = document.querySelector('.form');
 const input = document.querySelector('.input_search');
+
+const buttonPrev = document.querySelector('.btn-prev');
+const buttonNext = document.querySelector('.btn-next');
+
+let SearchCharacter = 0;
 
 const fetchcharacters = async (characters) => {
   const APIResponse = await fetch(`https://rickandmortyapi.com/api/character/${characters}`);
@@ -49,7 +53,13 @@ const rendercharacters = async (characters) =>{
     tituloStatus.innerHTML = 'Status:';
     characterSpecies.innerHTML = data.species;
     tituloSpecies.innerHTML = 'Species:';
-    characterType.innerHTML = data.type;
+    
+    if (data.type){
+      characterType.innerHTML = data.type; //
+    }
+    else{
+      characterType.innerHTML = 'Undefined';
+    }
     tituloGender.innerHTML = 'Gender:';
     characterGender.innerHTML = data.gender;
     tituloType.innerHTML = 'Type:';
@@ -62,7 +72,7 @@ const rendercharacters = async (characters) =>{
     input.value = '';
     planofundo = '';
     mensagemErro.innerHTML = '';
-    
+    SearchCharacter = data.id;
 
 
   }
@@ -100,5 +110,36 @@ form.addEventListener('submit', (event) =>{
   rendercharacters(input.value);
  
 });
+
+
+buttonPrev.addEventListener('click', () =>{
+  if(SearchCharacter > 1){
+    SearchCharacter -= 1;
+    rendercharacters(SearchCharacter);
+  }
+
+  else{
+    SearchCharacter = 828;
+    SearchCharacter -=1;
+  }
+  
+
+});
+
+
+buttonNext.addEventListener('click', () =>{
+
+  if(SearchCharacter == 826)
+  {
+    SearchCharacter = -1;
+    SearchCharacter += 1;
+  }
+
+  SearchCharacter += 1;
+  
+  rendercharacters(SearchCharacter);
+});
+
+
 
 

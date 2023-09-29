@@ -249,6 +249,30 @@ input:focus::-webkit-input-placeholder
     color: transparent;  
  }
 
+.botao{
+    margin-top: 1%;
+}
+ .button{
+    width: 7%;
+    padding: 0.6%;
+    margin: 0.6%;
+    border-style: solid;
+    border-width: 0.25rem;
+    border-radius: 5px;
+    padding: 0.3rem 1.1rem;
+    font-size: 1rem;
+    background-color: #009ea3;
+    border-color: transparent;
+    cursor:pointer;
+    box-shadow: 5px 4px 0px rgb(255, 255, 255);
+ }
+
+ .button:active{
+    background-color:rgb(28, 182, 74);
+    box-shadow: none;
+    font-size: 0.9rem;
+ }
+
  @media screen and (max-width:1500px){
     .character_species{
         left: 46%;
@@ -261,6 +285,7 @@ input:focus::-webkit-input-placeholder
     .character_gender{
         font-size: 1.2;
     }
+
  }
 
  
@@ -299,7 +324,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 63%;
+        left: 70%;
         font-size: 0.9rem;
     }
 
@@ -319,6 +344,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .titulo-type{
+        left: 60%;
         font-size: 0.95rem;
     }
 
@@ -381,10 +407,6 @@ input:focus::-webkit-input-placeholder
         left: 50%;
     }
 
-    .character_type{
-        left: 64%;
-    }
-
     .traco{
         left: 41%;
         
@@ -399,6 +421,18 @@ input:focus::-webkit-input-placeholder
     .character_number{
         top: 6%;
         font-size: 1.3rem;
+    }
+
+    .find{
+        font-size: 1.5rem;
+    }
+
+    .button{
+        font-size: 0.5rem;
+    }
+
+    .button:active{
+        font-size: 0.45rem;
     }
 
  }
@@ -453,7 +487,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 64%;
+        left: 68%;
     }
 
     .traco{
@@ -471,6 +505,8 @@ input:focus::-webkit-input-placeholder
         top: 6%;
         font-size: 1.3rem;
     }
+
+   
 
 
  }
@@ -593,7 +629,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 64%;
+        left: 68%;
     }
 
     .traco{
@@ -660,7 +696,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 68%;
+        left: 76%;
         font-size: 0.7rem;
     }
 
@@ -681,7 +717,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .titulo-type{
-        left: 60%;
+        left: 68%;
         font-size: 0.72rem;
     }
 
@@ -750,7 +786,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 68%;
+        left: 75%;
         font-size: 0.6rem;
     }
 
@@ -771,7 +807,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .titulo-type{
-        left: 60%;
+        left: 70%;
         font-size: 0.62rem;
     }
 
@@ -954,7 +990,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_type{
-        left: 68%;
+        left: 70%;
         font-size: 0.5rem;
     }
 
@@ -975,7 +1011,7 @@ input:focus::-webkit-input-placeholder
     }
 
     .titulo-type{
-        left: 60%;
+        left: 6%;
         font-size: 0.5rem;
     }
 
@@ -1027,5 +1063,6 @@ input:focus::-webkit-input-placeholder
         line-height: 125%;
     }
  }
+ 
 
 
