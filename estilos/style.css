@@ -23,7 +23,11 @@ p{
 .logo{
     display: flex;
     align-items: center;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+}
+
+.logo img{
+    width: 70vh;
 }
 
 .nav-list{
@@ -78,6 +82,8 @@ p{
     text-align: center;
     background-color: black;
     background-image: url(https://i.pinimg.com/564x/d8/3e/23/d83e23e844410b6a7acd48b6c1a0adba.jpg);
+    width: 100%;
+    height: 100%;
  }
 
 
@@ -283,9 +289,10 @@ input:focus::-webkit-input-placeholder
     }
 
     .character_gender{
-        font-size: 1.2;
+        font-size: 1.2rem;
     }
 
+   
  }
 
  
@@ -376,6 +383,24 @@ input:focus::-webkit-input-placeholder
         font-size: 0.95rem;
     }
 
+    .button{
+        font-size: 1rem;
+    }
+
+    .button:active{
+        font-size: 1rem;
+    }
+
+    
+    .button{
+        font-size: 0.9rem;
+        width: 10%;
+    }
+
+    .button:active{
+        font-size: 0.9rem;
+    }
+
  }
 
  
@@ -428,11 +453,11 @@ input:focus::-webkit-input-placeholder
     }
 
     .button{
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     .button:active{
-        font-size: 0.45rem;
+        font-size: 1rem;
     }
 
  }
@@ -498,7 +523,7 @@ input:focus::-webkit-input-placeholder
     .character_name{
         top:5%;
         left: 44%;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .character_number{
@@ -597,61 +622,22 @@ input:focus::-webkit-input-placeholder
         font-size: 0.95rem;
     }
 
+    
+
+    .button{
+        font-size: 0.8rem;
+        width: 12%;
+    }
+
+    .button:active{
+        font-size: 0.8rem;
+    }
  }
 
  
- @media screen and (max-width:1000px){
-    .character_species{
-        left: 49%;
-    }
-
-    .character_status{
-        left: 48%;
-    }
-
-    .character_species{
-        left: 49%;
-    }
-
-    
-    .character_gender{
-        left: 49%;
-    }
-
-    
-    .character_origin_name{
-        left: 47%;
-    }
-
-    
-    .character_location_name{
-        left: 50%;
-    }
-
-    .character_type{
-        left: 68%;
-    }
-
-    .traco{
-        left: 41%;
-        
-    }
-
-    .character_name{
-        top:5%;
-        left: 44%;
-        font-size: 1.5rem;
-    }
-
-    .character_number{
-        top: 6%;
-        font-size: 1.3rem;
-    }
-
- }
 
  
- @media screen and (max-width:890px){
+ @media screen and (max-width:900px){
     
     .find{
         position: absolute;
@@ -838,10 +824,14 @@ input:focus::-webkit-input-placeholder
     .titulo-gender{
         font-size: 0.62rem;
     }
+
+    .logo img{
+        width: 70vw;
+    }
  }
 
  
- @media screen and (max-width:580px){
+ @media screen and (max-width:700px){
     .mensagem-erro{
         position: absolute;
         font-size: 1rem;
@@ -948,6 +938,16 @@ input:focus::-webkit-input-placeholder
     .titulo-gender{
         font-size: 0.72rem;
     }
+
+    
+    .button{
+        font-size: 0.8rem;
+        width: 18%;
+    }
+
+    .button:active{
+        font-size: 0.8rem;
+    }
  }
 
  @media screen and (max-width:590px){
@@ -1011,7 +1011,6 @@ input:focus::-webkit-input-placeholder
     }
 
     .titulo-type{
-        left: 6%;
         font-size: 0.5rem;
     }
 
@@ -1062,7 +1061,177 @@ input:focus::-webkit-input-placeholder
         text-align: left;
         line-height: 125%;
     }
+
+    
+
+    .button{
+        font-size: 0.7rem;
+        width: 18%;
+    }
+
+    .button:active{
+        font-size: 0.7rem;
+    }
+ }
+
+ @media screen and (max-width:450px){
+    .button{
+        font-size: 0.7rem;
+        width: 20%;
+    }
+
+ }
+
+ 
+ 
+ @media screen and (max-width:400px){
+    .button{
+       
+    }
+    .characters_information{
+        font-size: 0.4rem;
+    }
+  
+    .character_species{
+        font-size: 0.4rem;
+    }
+
+    .character_status{
+        font-size: 0.4rem;
+    }
+
+    .character_species{
+        font-size: 0.4rem;
+    }
+
+    
+    .character_gender{
+        font-size: 0.4rem;
+    }
+
+    
+    .character_origin_name{
+       
+        font-size: 0.4rem;
+    }
+
+    
+    .character_location_name{
+        
+        font-size: 0.4rem;
+    }
+
+    .character_type{
+        left: 78%;
+        font-size: 0.4rem;
+    }
+
+    .traco{
+
+        font-size: 0.4rem;
+    }
+
+    .character_name{
+        font-size: 0.4rem;
+    }
+
+    .character_number{
+        font-size: 0.4rem;
+    }
+
+    .titulo-type{
+        left: 68%;
+        font-size: 0.4rem;
+    }
+
+    .titulo-location{
+        font-size: 0.4rem;
+    }
+
+    .titulo-nome{
+        font-size: 0.4rem;
+    }
+
+    .titulo-number{
+        font-size: 0.4rem;
+    }
+
+    .titulo-origin{
+        font-size: 0.4rem;
+    }
+
+    .titulo-species{
+        font-size: 0.4rem;
+    }
+
+    .titulo-status{
+        font-size: 0.4rem;
+    }
+    
+    .titulo-gender{
+        font-size: 0.4rem;
+    }
+
+    .mensagem-erro{
+        position: absolute;
+        font-size: 0.8rem;
+        top: 30%;
+        left: 5%;
+        right: 5%;
+        color:rgb(0, 0, 0);
+    
+    }
+    
+    .find{
+        position: absolute;
+        font-size: 0.8rem;
+        top: 23%;
+        left: 35%;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        line-height: 125%;
+    }
+
+    
+
+    .button{
+        font-size: 0.5rem;
+        width: 20%;
+    }
+
+    .button:active{
+        font-size: 0.4rem;
+    }
+
+    .nav-bar{
+        padding: 0%;
+    }
+
+    
+.barra {
+    border-width: 0.20rem;
+    border-radius: 5px;
+    padding: 0.3rem 1.1rem;
+    border-color: rgb(70, 69, 69);
+    margin-bottom: 2%;
+
  }
  
+ .barra input{
+   
+    font-size: 0.7rem;
+    
+ }
+ }
+
+ @media screen and (max-width:300px)
+ {
+    
+    .button{
+        width: 25%;
+    }
+ }
+
+
 
 
